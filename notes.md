@@ -5,7 +5,7 @@
 * Every value is a set
 * [ RM -> {"working", "prepared", "commited", "aborted"} ] : set of all arrys indexed by elements of RM with values in the set given by the possible transaction states. 
 * rmState \in [RM -> {"working", "prepared", "commited", "aborted"}] : rmState is an array and it can assume any of the values of the above definition
-* [i \in 1..42 -> i^2] : takes index set [1,2,...,42] and maps it to [1,2^2,...,42^2]
+* [i \in 1..42 |-> i^2] : takes index set [1,2,...,42] and maps it to [1,2^2,...,42^2]
 * rmState' = [s \in RM -> IF s=r THEN prepared ELSE rmState[s]]
 * short form for above thing is rmState' = [rmState EXCEPT ![r] = prepared]
 
