@@ -36,6 +36,9 @@ end process;
 * <> => eventually true. For EVERY behavior, in SOME STATE the condition will be true, and may be false before and after
 * ~> => leads to. a ~> b means that, if a ever bceomes true, then at some point b will be true (and not necessarily stay true).
 * Termination == <>(\A self \in ProcSet: pc[self] = "Done").
+* []<> => always eventually true. For finite, it assures us true at termination. For infinite, there will always be a point in the future where it is true
+* <>[] => will always be true frmo a certain point in time. 
+
 
 ## Temporal tautologies
 
